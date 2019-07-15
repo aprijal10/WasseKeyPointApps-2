@@ -1,0 +1,13 @@
+<ion-content>
+    <div *ngFor="let item of itemGroups" mbsc-card="" class="mbsc-comp mbsc-card mbsc-form mbsc-no-touch mbsc-ios mbsc-ltr" id="mobiscroll1552728974938">
+        <div class="mbsc-card-header">
+            <img src="{{ item.chat_picture }}" class="mbsc-avatar">
+            <h5 class="mbsc-card-title mbsc-bold">{{ item.chat_title }}</h5>
+            <div class="mbsc-card-subtitle">{{ item.describe }}</div>
+        </div>        
+        <div class=" mbsc-card-footer ">            
+            <button id="call-btn" class="mbsc-btn-flat mbsc-btn mbsc-control" data-icon="phone" (click)="showMessage(item.link_chat)"><ion-icon name="ios-link" style="color: blue !important;"></ion-icon> Join</button>            
+        </div>
+    </div>
+
+</ion-content>

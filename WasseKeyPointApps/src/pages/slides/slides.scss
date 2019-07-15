@@ -1,0 +1,21 @@
+page-slides {
+
+}
+.judul{
+    font-size: 13pt;
+    padding: 15px;
+    font-style: italic;
+    color: #f1f1f1;
+}
+b{
+    color: #ffffff;
+}
+ion-buttons{
+    position: absolute;
+    z-index: 10000;
+    bottom: 25px;
+    right: 5px;
+}
+ion-buttons .button-small{    
+    font-size: 10pt !important;
+}

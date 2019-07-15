@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-navbar color="wasseapps" hideBackButton>
+    <ion-title>Wasse Key Point Apps</ion-title> 
+    
+    <ion-buttons navbar-buttons end class="pengaturan" (click)="openSetting()">
+      <button ion-button icon-only>
+        <ion-icon name="ios-cog"></ion-icon>
+      </button>
+    </ion-buttons>
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <br />
+    <ion-grid>
+        <ion-row>
+          <ion-col>
+              <ion-card (click)="openSyllabus()">
+                <ion-card-content>
+                    <img src="assets/imgs/icon-syllabus.png" />
+                    SYLLABUS
+                    <br />
+                    <br />
+                </ion-card-content>                
+              </ion-card>
+          </ion-col>
+          <ion-col>
+              <ion-card (click)="openRecomendedBook()">
+                <ion-card-content>
+                    <img src="assets/imgs/icon-books.png" />
+                    RECOMENDED<br/> BOOKS
+                </ion-card-content>                
+              </ion-card>
+          </ion-col>         
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+              <ion-card (click)="openQuestionAnswer()">
+                <ion-card-content>
+                  <img src="assets/imgs/icon-questions.png" />
+                  QUESTIONS AND<br /> ANSWERS
+                </ion-card-content>                
+              </ion-card>
+          </ion-col>
+          <ion-col>
+              <ion-card (click)="openTutorial()">
+                <ion-card-content>
+                  <img src="assets/imgs/icon-tutorial.png" />
+                  TUTORIALS
+                  <br />
+                  <br />
+                </ion-card-content>                
+              </ion-card>
+          </ion-col>         
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <ion-card (click)="openTopNews()">
+                  <ion-card-content>
+                    <img src="assets/imgs/icon-group.png" />
+                    TOP NEWS <br />
+                    GROUP CHAT
+                  </ion-card-content>                
+                </ion-card>
+            </ion-col>
+            <ion-col>
+                <ion-card (click)="openUniv()">
+                  <ion-card-content>
+                    <img src="assets/imgs/icon-university.png" />
+                    UNIVERSITIES <br />COLLECTION
+                  </ion-card-content>                
+                </ion-card>
+            </ion-col>         
+        </ion-row>
+
+    </ion-grid>
+</ion-content>

@@ -1,0 +1,64 @@
+page-question-answer {
+
+}
+ion-card{
+    border-radius: 0px !important;    
+    color: #ffffff !important;
+    background-color: #FFF !important;
+}
+ion-card-content h2{
+    text-align: left !important;
+    font-weight: bold !important;
+    color: #000 !important;
+    font-size: 1.3em !important;
+    padding-bottom: 4px !important;
+    border-bottom: 1px solid greenyellow !important;
+}
+ion-card-content p{
+    text-align: left !important;
+    padding-top: 5px !important;
+    color: #111 !important;
+    font-size: 1.2em !important;
+    font-style: italic !important;
+}
+ion-card-content .jawaban{
+    text-align: left !important;
+    margin-top: 5px !important;
+}
+ion-card-content .question{
+    text-align: left !important;
+    margin-top: 5px !important;
+}
+.card-new{
+    text-align: left !important;
+    background-color: #FFF !important;
+    color: #ffffff !important;    
+}
+.card-new .question{
+    text-align: left !important;      
+}
+
+.badgeku-primary {
+    color: #fff;
+    background-color: #007bff;
+}
+.badgeku {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.badgeku-danger {
+    color: #fff;
+    background-color: #dc3545;
+}
+b{
+    color: #000 !important;
+}

@@ -1,0 +1,12 @@
+<ion-content style="background-color: #fff !important;">
+    <div mbsc-card="" class="mbsc-comp mbsc-card mbsc-form mbsc-no-touch mbsc-ios mbsc-ltr" id="mobiscroll1552713340592" style="border-radius: 0px !important; margin: 0px !important; padding: 0px !important;">
+        <img class="gambar" src="{{ newsImg }}">
+        <h2 class="mbsc-card-title" style="font-weight: bold; padding: 15px !important;" [innerHTML]="newsTitle"></h2>
+        <p style="padding-left: 15px !important; padding-top: -15px !important; font-style: italic !important; font-size: 12.5px !important;">By: {{ newsBy }} &nbsp; <ion-icon name="md-time" style="color: #000 !important;"></ion-icon> {{ dateNews }}</p>        
+        <div class="mbsc-card-content" [innerHTML]="newsBody">            
+        </div>
+        <div class="mbsc-card-footer">
+            <button class="mbsc-btn-flat mbsc-btn mbsc-control" id="mbsc-form-control-14"><ion-icon name="md-share" style="color: #1272dc !important;"></ion-icon> Share</button>
+        </div>
+    </div>
+</ion-content>

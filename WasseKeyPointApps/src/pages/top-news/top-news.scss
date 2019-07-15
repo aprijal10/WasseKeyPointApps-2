@@ -1,0 +1,39 @@
+page-top-news {
+
+}
+a{    
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+a:focus{
+    color: #76ff03 !important;
+}
+
+.tab-button[aria-selected=true]{
+    background-color: #33691e !important;
+    color: #76ff03 !important;
+    border-top: 2px solid #76ff03 !important;
+}
+.tab-button{
+    border-top: 1px solid #1b5e20 !important;
+    background-color: #1b5e20 !important;        
+}
+.tabbar{
+    background-color: #2e7d32 !important;
+}
+.icon{
+    color: #ffffff !important;
+}
+.icon:focus{
+    color: #76ff03 !important;
+}
+.gambar {
+    width: 100% !important;
+    vertical-align: middle !important;
+}
+.mbsc-avatar{
+    width: 16% !important;
+    height: 16% !important;
+    border-radius: 100% !important;
+    margin-right: 10px !important;
+}

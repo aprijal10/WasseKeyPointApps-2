@@ -1,0 +1,7 @@
+{
+  "name": "WasseKeyPointApps",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

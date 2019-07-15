@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar color="wasseapps">
+    <ion-title>Recomended Book</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content> 
+
+  <div *ngFor="let item of itemsBook" mbsc-card="" class="mbsc-comp mbsc-card mbsc-form mbsc-no-touch mbsc-ios mbsc-ltr" id="mobiscroll1552728974938">
+    <div class="mbsc-card-header">
+        <img src="{{ item.book_picture }}" class="mbsc-avatar" style="border-radius: 0px !important;">
+        <h5 class="mbsc-card-title mbsc-bold">{{ item.title }}</h5>
+        <div class="mbsc-card-subtitle" [innerHTML]=" item.describe "></div>
+    </div>        
+    <div class=" mbsc-card-footer book-footer">            
+        <button id="call-btn" class="mbsc-btn-flat mbsc-btn mbsc-control warna" data-icon="phone" ><ion-icon name="ios-eye"></ion-icon> View</button>            
+        <button id="call-btn" class="mbsc-btn-flat mbsc-btn mbsc-control warna" data-icon="phone" ><ion-icon name="download"></ion-icon> Save Offline</button>            
+    </div>
+  </div>
+
+  
+</ion-content>

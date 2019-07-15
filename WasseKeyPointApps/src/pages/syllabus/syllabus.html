@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color="wasseapps">
+    <ion-title>Syllabus</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div *ngFor="let item of items" mbsc-card="" class="mbsc-comp mbsc-card mbsc-form mbsc-no-touch mbsc-ios mbsc-ltr">
+        <div class="mbsc-card-header">
+            <h2 class="mbsc-card-title" style="font-weight: bold;" [innerHTML]=" item.title "></h2>            
+        </div>
+        <div class="mbsc-card-content" style="font-size: 11pt !important;" [innerHTML]=" item.describe "></div>
+        <div class="mbsc-card-footer">
+            <button id="call-btn" class="mbsc-btn-flat mbsc-btn mbsc-control" (click)="viewSyllabus($event, item)"><ion-icon name="ios-eye" style="color: #1272dc !important;"></ion-icon> View</button>
+            <button id="msg-btn" class="mbsc-btn-flat mbsc-btn mbsc-control"><ion-icon name="download" style="color: #1272dc !important;"></ion-icon> Save Offline</button>
+        </div>
+    </div>
+
+</ion-content>

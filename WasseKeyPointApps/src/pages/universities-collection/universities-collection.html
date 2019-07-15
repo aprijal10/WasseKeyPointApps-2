@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar color="wasseapps">
+    <ion-title>Universities and Collection</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>   
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content
+          pullingIcon="arrow-dropdown"
+          pullingText="Pull to refresh"
+          refreshingSpinner="crescent"
+          refreshingText="Getting Data...">
+        </ion-refresher-content>
+    </ion-refresher> 
+    <ion-list>
+      <ion-searchbar color="danger"></ion-searchbar>
+      <ion-item *ngFor="let item of items_univ">
+          <ion-thumbnail item-start>
+            <img class="new_img" src="http://wasscekeypoint.com/{{ item.univ_picture }}">
+          </ion-thumbnail>
+          <h2 class="new_h2">{{ item.univ_name }}</h2>
+          <p class="new_p">{{ item.describe }}</p>
+          <button ion-button clear item-end (click)="viewSite(item.link)">View</button>
+      </ion-item>
+
+      
+    </ion-list>
+</ion-content>

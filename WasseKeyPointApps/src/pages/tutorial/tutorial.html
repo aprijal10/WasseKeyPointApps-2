@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-navbar color="wasseapps">
+      <ion-title>Tutorials</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+      <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+          <ion-refresher-content
+            pullingIcon="arrow-dropdown"
+            pullingText="Pull to refresh"
+            refreshingSpinner="crescent"
+            refreshingText="Getting Data...">
+          </ion-refresher-content>
+      </ion-refresher>
+      <div *ngFor="let item of itemsVideo" mbsc-card="" class="mbsc-comp mbsc-card mbsc-form mbsc-no-touch mbsc-ios mbsc-ltr" id="mobiscroll1552295214022">
+          <video controls muted="">
+              <source src="http://wasscekeypoint.com/mov/{{ item.movie_file }}">
+          </video>
+          <!--
+          <div class="mbsc-card-content">
+              
+          </div>
+          -->
+          <div class="mbsc-card-footer">            
+              <!--<button class="mbsc-btn-flat mbsc-btn mbsc-control" id="mbsc-form-control-9"><ion-icon name="download" style="color: #1272dc !important;"></ion-icon> Save Offline</button>-->
+              {{ item.title }}
+          </div>
+      </div>
+      
+      
+  </ion-content>
+  

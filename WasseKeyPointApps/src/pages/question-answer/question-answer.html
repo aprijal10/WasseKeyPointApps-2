@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar color="wasseapps">
+    <ion-title>Question And Answer</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>  
+
+    <div *ngFor="let item of items" mbsc-card="" class="mbsc-comp mbsc-card mbsc-form mbsc-no-touch mbsc-ios mbsc-ltr" id="mobiscroll1552293805057">
+        <div class="mbsc-card-header">
+            <h2 class="mbsc-card-title small" style="font-weight: normal; font-size: 11pt !important;" [innerHTML]=" item.question_text "></h2>   
+            <span class="badgeku {{ item.category == 'Math' ? 'badgeku-danger' : 'badgeku-primary' }} ">{{ item.category == 'Math' ? 'Math' : 'English' }}</span>
+        </div>       
+        <div class="mbsc-card-footer">
+            <button id="call-btn" class="mbsc-btn-flat mbsc-btn mbsc-control" (click)="viewAnswer($event, item)"><ion-icon name="ios-albums" style="color: #1272dc !important;"></ion-icon> View Answer</button>
+            <button id="msg-btn" class="mbsc-btn-flat mbsc-btn mbsc-control"><ion-icon name="download" style="color: #1272dc !important;"></ion-icon> Save Offline</button>
+        </div>
+    </div>
+    
+</ion-content>

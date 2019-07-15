@@ -1,0 +1,30 @@
+page-home {
+    
+}
+ion-content{
+    background-color: #bdbdbd !important;
+}
+ion-card{
+    border-radius : 8px !important;
+    text-align: center;    
+    width: 100%;
+    font-weight: normal;
+    color: #FFF;
+    background: #000000 !important;
+    background: -webkit-linear-gradient(to right, #1b5e20, #000000) !important;
+    background: linear-gradient(to right, #1b5e20, #000000) !important; 
+    border: 1px solid #69f0ae !important;
+}
+ion-card-content{    
+    font-size: 0.95em !important;
+}
+img{
+    padding-bottom: 4px;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 62px !important;
+}
+.pengaturan{
+    top: 10px !important;
+}

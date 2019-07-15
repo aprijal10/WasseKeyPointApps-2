@@ -1,0 +1,11 @@
+<ion-content>
+    <div *ngFor="let berita of items" mbsc-card="" class="mbsc-comp mbsc-card mbsc-form mbsc-no-touch mbsc-ios mbsc-ltr" id="mobiscroll1552713340592">
+        <img class="gambar" src="{{ berita.urlToImage }}">
+        <div class="mbsc-card-content">
+            {{ berita.title }}
+        </div>
+        <div class="mbsc-card-footer">
+            <button class="mbsc-btn-flat mbsc-btn mbsc-control" id="mbsc-form-control-14"><ion-icon name="md-open" style="color: #1272dc !important;"></ion-icon> Read more...</button>            
+        </div>
+    </div>
+</ion-content>

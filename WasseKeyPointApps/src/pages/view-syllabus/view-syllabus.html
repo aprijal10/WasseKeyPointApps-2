@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar color="wasseapps">
+    <ion-title>View Syllabus</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div  mbsc-card="" class="mbsc-comp mbsc-card mbsc-form mbsc-no-touch mbsc-ios mbsc-ltr">
+        <div class="mbsc-card-header">
+            <h2 class="mbsc-card-title" style="font-weight: bold;" [innerHTML]="judulSyllabus"></h2>            
+        </div>
+        <div class="mbsc-card-content" style="font-size: 11pt !important;">
+            <span [innerHTML]="descSyllabus"></span>
+            <pdf-viewer [src]="src"
+                        [original-size]="false"
+                        [fit-to-page]="false"
+                        [zoom]="0.5">
+            </pdf-viewer>
+        </div>        
+    </div>
+</ion-content>
